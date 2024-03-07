@@ -1,0 +1,85 @@
+/*MOBILE FIRST*/
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "Lexend Deca",sans-serif;
+}
+
+.grid__container{
+	display: grid;
+	grid-template-rows: repeat(auto-fill,2fr);
+}
+
+.grid__item1__header,.grid__item2__header,.grid__item3__header{
+   color: #fff;
+   margin: 20px;
+ font-family: "Big Shoulders Display", sans-serif;
+}
+
+.grid__item1__section,.grid__item2__section,.grid__item3__section{
+	color: hsla(0, 0%, 100%, 0.75);
+	margin: 20px;
+}
+
+.grid__item1,.grid__item2,.grid__item3{
+	 padding: 30px;
+}
+
+.grid__item1{
+   background: hsl(31, 77%, 52%);
+}
+
+.grid__item2{
+	background: hsl(184, 100%, 22%);
+}
+
+.grid__item3{
+	background: hsl(179, 100%, 13%);
+}
+
+.grid__item1__button,.grid__item2__button,.grid__item3__button{
+	border: 3px solid #fff;
+	border-radius: 25px;
+	background: #fff;
+	margin: 20px;
+	padding: 10px 20px 10px 20px;
+}
+
+.grid__item1__button{
+	color: hsl(31, 77%, 52%);
+}
+
+.grid__item1__button:hover, .grid__item2__button:hover, .grid__item3__button:hover{
+	color: #fff;
+	background: none;
+}
+
+.grid__item2__button{
+	color: hsl(184, 100%, 22%);
+}
+
+.grid__item3__button{
+	color: hsl(179, 100%, 13%);
+}
+
+p{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media screen and (min-width: 1000px){
+    .grid__container{
+	  display: grid;
+	  grid-template-columns: repeat(3,2fr);
+	  min-height: 100vh;
+    }
+
+    .grid__item1__button, .grid__item2__button, .grid__item3__button{
+    	margin: 30px;
+    }
+
+}
+
+/*if Ernest Dicks (Frontend God) is reading this, i´ll love u forever*/
